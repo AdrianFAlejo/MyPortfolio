@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scare=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+    <title>Personal Portfolio || Responsive Webpage</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();">
+
+      </div>
+      <ul class="menu">
+        <li><a href="#Home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#About" onclick="toggleMenu();">About</a></li>
+        <li><a href="#Achievements" onclick="toggleMenu();">Achievements</a></li>
+        <li><a href="#Skills" onclick="toggleMenu();">Skills</a></li>
+        <li><a href="#Team" onclick="toggleMenu();">Team</a></li>
+        <li><a href="#Contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="Home">
+      <div class="textBx">
+        <h2>Hello, I'm<br><span>Adrian Alejo.</h2>
+        <h3>I'm an aspiring Web Developer</h3>
+        <a href="#About" class="btn">About me</a>
+      </div>
+    </section>
+
+    <section class="about" id="About">
+      <div class="heading">
+        <h2>About me</h2>
+      </div>
+      <div class="content">
+        <div class="w50">
+          <img src="images/id.jpg" alt="myidol">
+        </div>
+        <div class="contentBx w50">
+          <h3>I'm a try hard Web Developer</h3>
+          <p>Bahay-kubo, kahit munti
+          Ang halaman doon ay sari-sari
+          Singkamas at talong
+          Sigarilyas at mani
+          Sitaw, bataw, patani
+          Kundol, patola, upo't kalabasa
+          At tsaka mayro'n pang
+          Labanos, mustasa
+          Sibuyas, kamatis, bawang at luya
+          Sa paligid-ligid ay puno ng linga
+          Bahay-kubo, kahit munti
+          Ang halaman doon ay sari-sari
+          Singkamas at talong
+          Sigarilyas at mani
+          Sitaw, bataw, patani
+          <br>Kundol, patola, upo't kalabasa
+          At tsaka mayro'n pang
+          Labanos, mustasa
+          Sibuyas, kamatis, bawang at luya
+          Sa paligid-ligid ay puno ng linga
+          Sa paligid-ligid ay puno ng linga</p>
+          <a href="#" class="btn1">Download CV</a>
+        </div>
+      </div>
+    </section>
+    <section class="achievements" id="Achievements">
+      <div class="heading white">
+        <h2>My Achievements</h2>
+        <p>No achievements yet.</p>
+      </div>
+      <div class="content">
+        <div class="achievementBx">
+          <img src="images/css-logo.png" alt="css logo">
+          <h4>Soon to be best web developer in the world.</h4>
+          <a href="#" class="ach-btn">In progress...</a>
+        </div>
+        <div class="achievementBx">
+          <img src="images/dhvsu-logo1.png" alt="dhvsu logo">
+          <h4>College of Computing Studies Batch 2022<br>BS Computer Science</h4>
+          <a href="#" class="ach-btn">In progress...</a>
+        </div>
+      </div>
+      </section>
+
+      <section class="skills" id="Skills">
+        <div class="heading">
+          <h2>Skills</h2>
+        </div>
+        <div class="content">
+          <div class="skillsBx w50">
+            <h2>My creative skills and experiences.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+            <a href="#" class="skills-btn">Read more</a>
+          </div>
+          <div class="skills-bargraph w50">
+            <div class="bargraph">
+              <p>HTML</p>
+              <div class="container">
+                <div class="bar html">90%</div>
+              </div>
+              <p>CSS</p>
+              <div class="container">
+                <div class="bar css">50%</div>
+              </div>
+              <p>JavaScript</p>
+              <div class="container">
+                <div class="bar javascript">20%</div>
+              </div>
+              <p>PHP</p>
+                <div class="container">
+                  <div class="bar php">50%</div>
+                </div>
+              <p>MySQL</p>
+                <div class="container">
+                  <div class="bar mysql">50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="teams" id="Team">
+        <div class="heading white">
+          <h2>My teams</h2>
+        </div>
+        <div class="content">
+          <div class="teamsBx">
+            <img src="images/elon-musk.jpg" alt="Elon Musk">
+            <h3><a href="#">Elon Musk</a><br><span>Ceo of Tesla Co.</span></h3>
+          </div>
+          <div class="teamsBx">
+            <img src="images/bill-gates.jpg" alt="Elon Musk">
+            <h3><a href="#">Bill Gates</a><br><span>Founder of Microsoft Co.</span></h3>
+          </div>
+          <div class="teamsBx">
+            <img src="images/nam-do-san.jpg" alt="Nam Do San">
+            <h3><a href="#">Nam Do San</a><br><span>Full stack developer</span></h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="Contact">
+        <div class="heading">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+          <div class="contactInfo">
+            <h2>Contact Info</h2>
+            <div class="contactInfoBx">
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-male"></i>
+                </div>
+                <div class="text">
+                  <h3>Name</h3>
+                  <p>Adrian Alejo</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>San Simon, Pampanga<br>2015</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>alejoadrian.14@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formBx">
+            <form class="" action="index.html" method="post">
+              <h3>Message Me</h3>
+              <input type="text" name="" placeholder="Full Name">
+              <input type="email" name="" placeholder="Email">
+              <textarea placeholder="Your Message"></textarea>
+            </form>
+            <input class="submitbtn" type="submit" value="Send message">
+          </div>
+      </section>
+      <footer>
+        <p>Created By <span>Adrian Alejo</span> © 2021 All rights reserved.</p>
+      </footer>
+<script type="text/javascript">
+  window.addEventListener('scroll', function(){
+  var header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0)
+});
+
+  function toggleMenu() {
+    var menuToggle = document.querySelector('.toggle');
+    var menu = document.querySelector('.menu');
+    menuToggle.classList.toggle('active')
+    menu.classList.toggle('active')
+  }
+</script>
+  </body>
+  </html>

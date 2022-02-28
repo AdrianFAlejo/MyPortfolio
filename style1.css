@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+section{
+  padding: 100px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 90%;
+	padding: 10px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  transition: 0.5s;
+}
+header.sticky{
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 1000;
+	letter-spacing: 2px;
+  font-family: sans-serif;
+  text-align: right;
+}
+header.sticky .logo{
+  color: #111;
+}
+header ul {
+	position: relative;
+	display: flex;
+  font-family: monospace;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 10px;
+	color: white;
+  font-size: 15px;
+	text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+header.sticky ul li a{
+  color: #111;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: url("images/bg.jpg");
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner h2{
+	font-size: 30px;
+	color: white;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.banner h3{
+	font-size: 1.5em;
+	color: white;
+	font-weight: 500;
+  padding: 10px 0 25px;
+}
+.btn{
+	position: relative;
+	background: red;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	letter-spacing: 2px;
+  font-weight: 700;
+  font-family: monospace;
+  border-radius: 10px;
+}
+.btn:hover{
+  color: red;
+  background: white;
+  border: solid 1px red;
+  padding: 9px 29px;
+}
+/*About me design*/
+.about{
+  padding-top: 60px;
+  min-height: 70vh;
+}
+.heading{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading h2{
+  font-weight: 800;
+  font-size: 40px;
+  padding: 15px 0;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Rubik', sans-serif;
+}
+.w50{
+  min-width: 50%;
+}
+.w50 img{
+  padding-left: 80px;
+  max-width: 70%;
+  max-height: 100%;
+}
+.contentBx{
+  padding-top: 40px;
+  display: inline;
+}
+.contentBx{
+  padding-top: 40px;
+}
+.contentBx p{
+  font-size: 18px;
+  padding-top: 30px;
+}
+.btn1{
+  position: relative;
+	background: black;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	letter-spacing: 2px;
+  font-weight: 600;
+  font-family: monospace;
+  border-radius: 10px;
+}
+.btn1:hover{
+  background: inherit;
+  color: inherit;
+  border: solid 2px;
+  padding: 8px 28px;
+  border-radius: 10px;
+}
+/*About me design end*/
+/*Achievements design*/
+ .achievements{
+   background: black;
+   color: white;
+   padding-top: 60px;
+   min-height: 70vh;
+ }
+ .achievements .heading{
+ }
+ .heading.white{
+   color: white;
+ }
+ .achievements .content{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row
+ }
+ .achievements .content .achievementBx{
+   padding: 40px 20px;
+   background: #444;
+   color: white;
+   max-width: 340px;
+   margin: 20px;
+   text-align: center;
+   transition: 0.5s;
+   border-radius: 8%;
+ }
+ .achievements .content .achievementBx:hover{
+   background: white;
+   color: black;
+ }
+ .achievements .content .achievementBx img{
+   max-width: 90px;
+ }
+ .achievements .content .achievementBx h4{
+   padding: 10px 0;
+ }
+ .achievements .content .achievementBx a{
+  position: relative;
+ 	background: #87CEFA;
+ 	display: inline-block;
+ 	color: #444;
+ 	margin-top: 20px;
+ 	padding: 10px 10px;
+ 	font-size: 15px;
+ 	text-decoration: none;
+  font-weight: 600;
+  font-family: monospace;
+  border-radius: 10px;
+ }
+ .achievements .content .achievementBx a:hover{
+   color: white;
+   background: #444;
+ }
+/*Achievements design end*/
+/*Skills design*/
+.skills{
+  padding-top: 60px;
+  min-height: 70vh;
+}
+.skills .content{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Rubik', sans-serif;
+}
+.skillsBx h2{
+  color: black;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.skillsBx p{
+  font-size: 18px;
+  line-height: 1.8;
+  word-spacing: 2px;
+}
+.skills-btn{
+  position: relative;
+	background: black;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	letter-spacing: 2px;
+  font-weight: 700;
+  font-family: monospace;
+  border-radius: 10px;
+}
+.skills-btn:hover{
+  color: inherit;
+  padding: 8px 28px;
+  background: inherit;
+  border: 2px solid black;
+}
+.skills-bargraph{
+  max-width: 50%;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.container {
+  width: 100%;
+  background-color: #ccc;
+}
+.bar {
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+}
+.html {width: 90%; background-color: black;}
+.css {width: 50%; background-color: black;}
+.javascript {width: 20%; background-color: black;}
+.php {width: 50%; background-color: black;}
+.mysql {width: 50%; background-color: black;}
+/*Skills design end*/
+
+/*Teams design*/
+.teams{
+  background: black;
+  color: white;
+  min-height: 70vh;
+}
+.teams .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.teams .content .teamsBx{
+  padding: 30px 30px;
+  background: #444;
+  color: white;
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.teams .content .teamsBx:hover{
+  background: red;
+}
+.teams .content .teamsBx img{
+  vertical-align: middle;
+  width: 180px;
+  height: 180px;
+  border: solid white 5px;
+  border-radius: 50%
+}
+.teams .content .teamsBx h3{
+  padding: 10px 0 0 0;
+}
+.teams .content .teamsBx a{
+  text-decoration: none;
+  color: white;
+}
+.teams .content .teamsBx a:hover{
+  text-decoration: underline;
+  color: #222;
+}
+/*Teams design end*/
+/*Contact me design*/
+.contact{
+  padding-top: 50px;
+  max-height: 70vh;
+}
+.formBx{
+  min-width: 60%;
+}
+.formBx form{
+  display: flex;
+  flex-direction: column;
+}
+.contactInfo h3,
+.formBx form h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formBx form textarea,
+.formBx form input{
+  align-items: flex-end;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: white;
+  color: #111;
+  border-radius: 8px;
+  resize: none;
+  border: solid #999 1px;
+  width: 500px;
+}
+.formBx form textarea{
+  height: 100px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+  color: #999;
+}
+.submitbtn{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  border: solid black 1px;
+}
+.submitbtn:hover{
+  border: solid black 2px;
+  padding: 13px 28px;
+  background: white;
+  color: black;
+}
+.contactInfo{
+  min-width: 40%;
+}
+.contactInfoBx{
+  position: relative;
+}
+.contactInfoBx .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contactInfoBx .box .icon{
+  min-width: 40px;
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px
+}
+.contactInfoBx .box .text{
+  margin-left: 20px;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+  font-weight: 500;
+  color: blue;
+  margin-bottom: 0;
+}
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+footer span{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/*Contact me design end*/
+
+/*Responsive*/
+@media(max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 50px;
+  }
+  .menu{
+    position: fixed;
+    top: 55px;
+    left: -150%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    border: 1px solid rgba(0,0,0,0.2)
+  }
+  .menu.active{
+    left: 0;
+    right: 0;
+  }
+  header ul li a{
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle{
+    position: static;
+    width: 40px;
+    height: 40px;
+    background: url("images/menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active{
+    background: url("images/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header.sticky .toggle{
+    filter: invert(1);
+  }
+  section{
+    padding: 100px 50px;
+  }
+  .banner{
+    padding: 150px 50px 100px;
+  }
+  .banner h2{
+    font-size: 1.5em;
+  }
+  .btn{
+    position: relative;
+    background: red;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: monospace;
+    border-radius: 10px;
+  }
+  .heading h2 {
+    font-weight: 800;
+    font-size: 35px;
+    padding: 15px 0;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .w50 img {
+    padding-left: 80px;
+    max-width: 70%;
+    max-height: 90%;
+  }
+  .contentBx p {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .skillsBx h2 {
+    color: black;
+    font-size: 23px;
+    padding-bottom: 30px;
+  }
+  .skillsBx p {
+    font-size: 16px;
+    line-height: 1.8;
+    word-spacing: 2px;
+  }
+
+}
